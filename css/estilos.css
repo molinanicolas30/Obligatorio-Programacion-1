@@ -1,0 +1,244 @@
+/* AUTOR: Nicolás Molina Giudice - 230333 */
+
+*{
+	margin-right: 0;
+	margin-left: 0;
+}
+body{
+	font-family: Arial;
+	background-color:  #b1c85f ;
+	
+}
+a{
+	color: green;
+}
+header{
+	height:70px;
+	align-items: center;
+}
+
+.sinpunto{
+	display: inline-block;
+}
+.encabezado{
+	align-items: center;
+	list-style-type: disc;
+}
+.logo img{
+	height: 50px;
+	padding-right: 40px;
+}
+.busInicio img{
+	height: 10px;
+	transform: scale(2);
+}
+.busInicio{
+	padding-left: 20px;
+}
+.encabezado{
+	display: inline;
+	display:flex;
+}
+nav a{
+	padding-right: 20px; 
+	padding-left: 20px;
+}
+.submit{
+	padding-left: 20px;
+}
+#gestion_Reclamos{
+	background-color: #fc9c7c;
+}
+.gestion_Reclamos{
+	background: #fc9c7c;
+	margin-bottom: 0;
+}
+#h1reclamos{
+	padding-bottom: 20px;
+}
+h1{
+	margin-top: 0;
+}
+.foto_estudiante{
+	background-color: #fc9c7c;
+	display: flex;
+	align-items: center;
+}
+.foto_estudiante img{
+	height: 75px;
+	width: auto;
+	border: 3px solid LightGray ;
+	padding: 10px;
+	border-radius: 10px;
+}
+.foto_estudiante a{
+	padding-left: 0;
+	padding-right: 0;
+}
+.foto_estudiante p{
+	padding-left: 10px;
+}
+.degrade{
+	background-color: #fc9c7c;
+	text-align: center;
+	padding-bottom: 50px;
+	padding-top: 50px
+}
+#boton_degrade{
+	display: inline-block;
+	width: 450px;
+	height: 100px;
+	border-radius: 40px;
+	border: 2.5px solid;
+	background: linear-gradient(to bottom, #b4cc5c 30%, #c49c54 70%);
+	font-size: 35px;
+	cursor: pointer;
+}
+#agregar_Reclamo{
+	background-color: #c49c54;
+	margin-top: 0;
+}
+
+#nombreUsu{
+	width: 250px;
+}
+#empresa{
+	width: 257px;
+}
+
+#titReclamo{
+	width: 250px;
+	margin-left: 50px;
+}
+#descripcion_reclamo{
+	margin-left: 150px;
+	padding-bottom: 50px;
+}
+#boton_agregar_reclamo{
+	margin-left: 150px;
+}
+#reclamos_ingresados{
+	background-color: #c47454;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.reclamos_ingresados{
+	background-color: #c47454;
+}
+.cuadradoBlanco{
+	background-color: white;
+	border-radius: 20px;
+	margin-left: 100px;
+	margin-right: 100px;
+	border: 2.5px solid;
+}
+.cuadradoBlanco p{
+	margin-bottom: 10px;
+	margin-left: 370px;
+}
+.botCantRecl{
+	display: flex;
+	align-items: center;
+	
+}
+.botCantRecl button{
+	margin-left: 370px; 
+	order: 1;
+	padding: 5px 10px;
+}
+.botCantRecl p{
+	order: 2;
+	margin-left: 10px;
+	padding-bottom: 15px;
+}
+.sub1{
+	background-color: #e29777;
+}
+.sub2{
+	background-color: #3ba83c ;
+}
+#estadística{
+	background-color: #c49c54;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#botones{
+	display: flex;
+	justify-content: center;
+}
+
+.botonesInicialesEmpresas{
+	cursor: pointer;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: 10px;
+}
+.botonesInicialesEmpresas:hover {
+  background-color: #3ba83c ;
+}
+.orden{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 30px;	
+}
+.orden input, label{
+	margin-left: 10px;
+}
+#unicap{
+	display: flex;
+	justify-content: center;
+}
+.parrafoTitTabla{
+	margin-bottom: 0;
+}
+.tabla{
+	display: flex;
+	justify-content: center;
+}
+table, th, td {
+  border: 3px solid black;
+  background-color: white;
+}
+th, td {
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: center;
+}
+table{
+	border-radius: 20px;
+}
+#estadística ul li{
+	list-style-type: disc;
+}
+#agregar_empresa{
+	background-color: #9cfc94;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#nombreEmpresa{
+	width: 242px;
+}
+
+.labelContainer {
+	display: flex;
+}
+
+.labelContainer label {
+	width: 140px;
+}
+
+#direccion{
+	width: 242px;
+}
+
+#rubro{
+	width: 249px;
+}
+
+#boton_agregar_empresa{
+	margin-left: 150px;
+}

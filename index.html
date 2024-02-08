@@ -1,0 +1,136 @@
+<!-- AUTOR: Nicolás Molina Giudice - 230333 -->
+<!Doctype HTML>
+	<html lang="es"> 
+		<head>
+			 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			 <link rel="stylesheet" href="css/estilos.css">
+			 <script src="js/clases.js"></script>
+			 <script src="js/funciones.js"></script>
+			 <title>OBLIGATORIO 2</title>
+		</head>
+		<body>
+			<header>
+				<nav>
+					<ul class ="encabezado">
+						<li class="sinpunto"><a href="img/reclamos.png" target="_blank" class="logo"><img src="img/reclamos.png" alt="logo de la Empresa"></a></li>
+						<li class="sinpunto" id="bot1"><a href="#gestion_Reclamos">Principal</a></li>
+						<li class="sinpunto" id="bot2"><a href="#reclamos_ingresados">Ver Reclamos</a></li>
+						<li class="sinpunto" id="bot3"><a href="#estadística">Estadísticas</a></li>
+						<li class="sinpunto" id="bot4"><a href="#agregar_empresa">Agregar Empresa</a></li>
+						<li class="sinpunto">
+							<form class="busInicio">
+								<input type="text" id="buscador" placeholder= "Buscar reclamo ...">
+								<button type="button">
+									<img src="img/lupita.png" alt="imagen boton de busqueda" id="botonBuscador">
+								</button>
+							</form>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section id="gestion_Reclamos">
+				<h1 id="h1reclamos" class="gestion_Reclamos">Sitio para gestión de reclamos</h1>
+				<article id="restoReclamos">
+				<h3 class="gestion_Reclamos">Este sitio permite ingresar reclamos o quejas y realizar diversas consultas.</h3>
+				<P class="gestion_Reclamos">Sitio desarrollado en el curso de programación l - 1er semestre 2023 - Universidad ORT Uruguay por:</p>
+				<nav class="foto_estudiante">
+					<a href="img/foto.jpg" target="_blank">
+						<img src="img/foto.jpg" alt="foto del creador del html">
+					</a>
+					<p class="gestion_Reclamos" id="txt_foto">Nicolás Molina Giudice - 230333</p>
+				</nav>
+				<div class="degrade">
+					<button id="boton_degrade">Agregar tu reclamo aquí</button>
+				</div>
+				</article>
+			</section>
+			<section id="agregar_Reclamo">
+				<h1>Agregar Reclamo</h1>
+				<form class="datos1">
+					<div class="labelContainer">
+						<label for="nombreUsu">Nombre</label>
+						<input type="text" placeholder= "Tu nombre..." maxlength="30" id="nombreUsu">
+					</div>
+					<div class="labelContainer">	
+						<label for="empresa">Empresa</label>
+						<select id="empresa">
+						</select>
+					</div>
+					<div>
+						<label for="titReclamo">Reclamo:</label>
+						<input type="text"  placeholder="El titulo es..." maxlength="30" id="titReclamo"><br>
+						<textarea placeholder="El titulo es..." id="descripcion_reclamo" cols="40"></textarea><br>
+					</div>
+					<button type="button" id="boton_agregar_reclamo">Agregar</button>
+					<button type="reset" id="boton_volver">volver</button>
+				</form>
+			</section>
+			<div id="reclamos_ingresados">
+			</div>
+			<section id="estadística">
+				<h1>Estadísticas</h1>
+				<h3>Empresas Seleccionadas</h3>
+				<form id="botones">
+				</form>
+				<form class="orden">
+					<input type="radio" checked name="orden" id="creci"><label for="creci">Orden nombre creciente</label>
+					<input type="radio" name="orden" id="decre"><label for="decre">Orden nombre decreciente</label>
+				</form>
+				<div id="unicap">
+				</div>
+				<form class="tabla" style="width:100%">
+				<table>
+					<thead>
+						<tr><th>Nombre</th><th>Dirección</th><th>Rubro</th><th>Cantidad</th></tr>
+					</thead>
+					<tbody id="filasTablas">
+					</tbody>
+				</table>
+				</form>
+				<div>
+				<h3>Información General</h3>
+				<p id="promedioEmp">No hay empresas a las cual hacer un promedio de los reclamos.</p>
+				<p id="totalEmpRegi">No hay empresas registradas.</p>
+				<h3>Empresas sin Reclamos</h3>
+				<ul class="con_punto" id="sinReclamos">
+				</ul>
+				<h3>Rubros con máxima cantidad de reclamos</h3>
+				<ul class="con_punto" id="rubroMax">
+				<li>Viajes: cantidad 4</li>
+				</ul>
+				</div>
+			</section>
+			<section id="agregar_empresa">
+				<h1>Agregar Empresa</h1>
+				                   
+				<form class="datos2">
+					<div class="labelContainer">
+						<label for="nombreEmpresa">Nombre</label>
+						<input type="text" maxlength="30" placeholder="Nombre Empresa ..." id="nombreEmpresa">
+					</div>
+					<div class="labelContainer">
+						<label for="direccion">Direccion</label>
+						<input type="text" maxlength="30" placeholder="Direccion Empresa ..." id="direccion">
+					</div>
+					<div class="labelContainer">
+						<label for="rubro">Rubro</label>
+						<select id="rubro">
+							<option value="">Seleccione una opcion</option>
+							<option value="Viajes">Viajes</option>
+							<option value="Restaurantes">Restaurantes</option>
+							<option value="Bancos">Bancos</option>
+							<option value="Muebles">Muebles</option>
+							<option value="Autos">Autos</option>
+							<option value="Servicios">Servicios</option>
+							<option value="General">General</option>
+						</select>
+					</div>
+					<div class = "alinear">
+						<button type="button" id="boton_agregar_empresa">Agregar</button>
+					</div>
+				</form>
+			</section>
+		</body>
+	</html>
+	
